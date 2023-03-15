@@ -7,6 +7,8 @@ class Calculator
 		
 		Console.WriteLine("hasil penambahan: {0} + {1} = {2}", a, b, penambahan(a, b));
 		Console.WriteLine("hasil pengurangan: {0} - {1} = {2}", a, b, pengurangan(a, b));
+		Console.WriteLine("hasil pembagian: {0} / {1} = {2}", a, b, pembagian(a, b));
+		Console.WriteLine("hasil perkalian: {0} * {1} = {2}", a, b, perkalian(a, b));
 		
 		Console.WriteLine("\nTekan sembarang key untuk keluar");
 		Console.Readkey();
@@ -19,5 +21,13 @@ class Calculator
 	static int Pengurangan(int a, int b)
 	{
 		return a - b;
+	}
+	static int Pembagian(int a, int b)
+	{
+		return a / b;
+	}
+	static int Perkalian(int a, int b)
+	{
+		return a * b;
 	}
 }
